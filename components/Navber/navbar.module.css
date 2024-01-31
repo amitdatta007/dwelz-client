@@ -1,0 +1,10 @@
+.nav{
+    @apply bg-bg-content
+}
+.navbar{
+    @apply w-full max-w-[1640px] mx-auto p-5 flex justify-between items-center
+}
+
+.contact_btn{
+    @apply bg-bg px-6 py-4 text-lg font-medium border border-border rounded-[10px] leading-normal
+}
