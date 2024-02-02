@@ -1,8 +1,12 @@
+import Hero from "@/components/Hero/Hero";
+import Services from "@/components/Services/Services";
+
 const HomePage = () => {
     return (
-        <div>
-            home page
-        </div>
+        <main>
+            <Hero />
+            <Services />
+        </main>
     );
 };
 

@@ -1,0 +1,15 @@
+.services_section{
+    @apply mx-5 max-w-[1920px] xl:mx-auto bg-bg-content p-[10px]
+}
+.services_section p{
+    @apply text-sm md:text-base xl:text-lg font-semibold text-center
+}
+.services{
+    @apply grid grid-cols-2 md:grid-cols-4 gap-[10px] xl:gap-5 bg-bg p-[10px] xl:p-5 border border-border
+}
+.services > div {
+    @apply bg-bg-content rounded-xl px-[14px] md:px-4 xl:px-5 py-5 md:py-[30px] xl:py-10 flex flex-col gap-[14px] md:gap-4 items-center border border-border relative
+}
+.arrow_icon{
+    @apply absolute top-5 right-[14px] md:top-[30px] md:right-4 xl:top-10 xl:right-5
+}

@@ -1,0 +1,49 @@
+.hero_section{
+    @apply w-full max-w-[1640px] mx-auto p-5 flex gap-20 md:gap-[60px] xl:gap-20 flex-col md:flex-row
+}
+
+.hero_info{
+    @apply w-full flex flex-col justify-center gap-[60px] 
+}
+.hero_info h1{
+    @apply text-[28px] md:text-[46px] xl:text-6xl font-semibold leading-tight
+}
+.hero_info h2{
+    @apply text-2xl md:text-[30px] xl:text-[40px] font-bold leading-normal
+}
+.hero_info p{
+    @apply text-sm md:text-base xl:text-lg text-text-content leading-normal font-medium 
+}
+
+.hero_btn_area{
+    @apply flex flex-col md:flex-row gap-5
+}
+
+.learn_more_btn{
+    @apply text-lg leading-normal font-medium px-6 py-[18px] border border-border rounded-[10px]
+}
+
+.properties_btn{
+    @apply bg-primary text-lg leading-normal font-medium px-6 py-[18px] border border-border rounded-[10px]
+}
+
+.service_info_area{
+    @apply grid grid-cols-2 grid-rows-2 md:flex gap-3 md:gap-4 xl:gap-5 
+}
+
+.service_info_area > div{
+    @apply border border-border bg-bg-content rounded-xl px-4 py-4 md:px-5 md:py-[14px] xl:px-6 xl:py-4 text-center md:text-left
+}
+.service_info_area > div:nth-child(3){
+    @apply col-span-2
+}
+
+
+.hero_image{
+    @apply w-full bg-bg-content rounded-xl
+}
+.hero_image img {
+    @apply w-full
+}
+
+

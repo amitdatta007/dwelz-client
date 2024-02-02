@@ -1,0 +1,22 @@
+.mobile_nav{
+    @apply block md:hidden
+}
+.menu_btn{
+    @apply block md:hidden z-50
+}
+.mobile_menu{
+    @apply absolute flex md:hidden w-full h-screen bg-bg-content top-[-150%] left-0 p-5 transition-all duration-300 ease-linear justify-center items-center flex-col gap-[6px]
+}
+.mobile_menu_open{
+    @apply top-0
+}
+.nav_item{
+    @apply px-6 py-[14px] font-medium text-lg leading-normal rounded-[10px]
+}
+
+.nav_menu_active{
+    @apply bg-bg border border-border
+}
+.contact_btn{
+    @apply bg-bg px-6 py-4 text-lg font-medium border border-border rounded-[10px] leading-normal
+}

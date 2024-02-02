@@ -15,7 +15,8 @@ const config: Config = {
         "text": "var(--text-primary)",
         "text-content": "var(--text-secondary)",
         "border": "var(--border)",
-      }
+      },
+      
     },
   },
   plugins: [],

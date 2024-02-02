@@ -5,6 +5,26 @@
     @apply w-full max-w-[1640px] mx-auto p-5 flex justify-between items-center
 }
 
+.logo{
+    @apply flex items-center text-xl md:text-3xl font-medium gap-2 z-50
+}
+.logo img{
+    @apply h-7 w-7
+}
+
+.nav_menu{
+    @apply hidden md:flex gap-[6px]
+}
+
+
+.nav_item{
+    @apply px-6 py-[14px] font-medium text-lg leading-normal rounded-[10px]
+}
+
+.nav_menu_active{
+    @apply bg-bg border border-border
+}
+
 .contact_btn{
-    @apply bg-bg px-6 py-4 text-lg font-medium border border-border rounded-[10px] leading-normal
+    @apply hidden md:block bg-bg px-6 py-4 text-lg font-medium border border-border rounded-[10px] leading-normal
 }
