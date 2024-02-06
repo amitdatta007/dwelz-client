@@ -18,23 +18,25 @@ const MobileNav = () => {
   // console.log(window.screen.width)
 
   useEffect(() => {
-    if(isOpen) {
+    if (isOpen) {
       lockScroll()
-    } else{
+    } else {
       unlockScroll();
     }
   }, [isOpen, lockScroll, unlockScroll])
 
   useEffect(() => {
-    if(res > 767){
+    if (res > 767) {
       setIsOpen(false)
     }
   }, [res])
 
-  window.addEventListener('resize', () => {
-    setRes(window.screen.width)
-  })
-  
+  if (window) {
+    window.addEventListener('resize', () => {
+      setRes(window.screen.width)
+    })
+  }
+
 
   return (
     <>
@@ -43,14 +45,13 @@ const MobileNav = () => {
         onClick={() => setIsOpen((state) => !state)}
       >
         {
-            isOpen ? <Image alt="" src={crossBtn} /> : <Image alt="" src={menuBtn} />
+          isOpen ? <Image alt="" src={crossBtn} /> : <Image alt="" src={menuBtn} />
         }
       </button>
 
       <div
-        className={`${styles.mobile_menu} ${
-          isOpen ? styles.mobile_menu_open : null
-        }`}
+        className={`${styles.mobile_menu} ${isOpen ? styles.mobile_menu_open : null
+          }`}
       >
         {navList.map((item) => (
           <NavLink
