@@ -5,7 +5,7 @@ export const navList = [
     },
     {
         title: 'Properties',
-        path: '/properties'
+        path: '/'
     },
     {
         title: 'About Us',
@@ -13,6 +13,6 @@ export const navList = [
     },
     {
         title: 'Services',
-        path: '/services'
+        path: '/'
     }, 
 ] 
