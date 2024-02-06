@@ -31,7 +31,9 @@ const MobileNav = () => {
     }
   }, [res])
 
-  if (window) {
+  
+
+  if (typeof window !== "undefined") {
     window.addEventListener('resize', () => {
       setRes(window.screen.width)
     })
