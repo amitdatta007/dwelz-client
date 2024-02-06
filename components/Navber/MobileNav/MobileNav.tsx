@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { navList } from "@/constants/navlist";
 import NavLink from "../NavLink/NavLink";
 import { useScrollLock } from "@/hooks/useScrollLock";
+import Link from "next/link";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -67,7 +68,7 @@ const MobileNav = () => {
             {item.title}
           </NavLink>
         ))}
-        <button className={styles.contact_btn}>Contact Us</button>
+        <Link href='/contact-us' className={styles.contact_btn}>Contact Us</Link>
       </div>
     </>
   );

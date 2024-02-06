@@ -27,7 +27,7 @@ const Navber = () => {
             </NavLink>
           ))}
         </div>
-        <button className={styles.contact_btn}>Contact Us</button>
+        <Link href='/contact-us' className={styles.contact_btn}>Contact Us</Link>
         <MobileNav />
       </div>
     </nav>
