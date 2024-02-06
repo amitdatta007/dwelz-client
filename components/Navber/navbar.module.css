@@ -6,7 +6,7 @@
 }
 
 .logo{
-    @apply flex items-center text-xl md:text-3xl font-medium gap-2 z-50
+    @apply flex items-center text-xl md:text-3xl font-medium gap-2 z-50 
 }
 .logo img{
     @apply h-7 w-7

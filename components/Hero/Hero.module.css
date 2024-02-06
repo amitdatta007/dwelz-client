@@ -1,5 +1,5 @@
 .hero_section{
-    @apply w-full max-w-[1640px] mx-auto p-5 flex gap-20 md:gap-[60px] xl:gap-20 flex-col md:flex-row
+    @apply w-full max-w-[1640px] mx-auto p-5 flex gap-20 md:gap-[60px] xl:gap-20 flex-col-reverse md:flex-row
 }
 
 .hero_info{
@@ -40,7 +40,7 @@
 
 
 .hero_image{
-    @apply w-full bg-bg-content rounded-xl
+    @apply w-full h-fit bg-bg-content rounded-xl
 }
 .hero_image img {
     @apply w-full

@@ -4,12 +4,37 @@ import Image from "next/image";
 import menuBtn from "@/assets/icons/menu-open.svg";
 import crossBtn from "@/assets/icons/menu-close.svg";
 import styles from "./MobileNav.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { navList } from "@/constants/navlist";
 import NavLink from "../NavLink/NavLink";
+import { useScrollLock } from "@/hooks/useScrollLock";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [res, setRes] = useState<number>(0)
+
+  const { lockScroll, unlockScroll } = useScrollLock();
+
+  // console.log(window.screen.width)
+
+  useEffect(() => {
+    if(isOpen) {
+      lockScroll()
+    } else{
+      unlockScroll();
+    }
+  }, [isOpen, lockScroll, unlockScroll])
+
+  useEffect(() => {
+    if(res > 767){
+      setIsOpen(false)
+    }
+  }, [res])
+
+  window.addEventListener('resize', () => {
+    setRes(window.screen.width)
+  })
+  
 
   return (
     <>
@@ -34,6 +59,7 @@ const MobileNav = () => {
             className={styles.nav_item}
             activeClassName={styles.nav_menu_active}
             exact={item.path === "/"}
+            onClick={() => setIsOpen((state) => !state)}
           >
             {item.title}
           </NavLink>

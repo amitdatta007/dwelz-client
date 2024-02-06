@@ -5,7 +5,7 @@
     @apply block md:hidden z-50
 }
 .mobile_menu{
-    @apply absolute flex md:hidden w-full h-screen bg-bg-content top-[-150%] left-0 p-5 transition-all duration-300 ease-linear justify-center items-center flex-col gap-[6px]
+    @apply absolute flex md:hidden w-full h-screen bg-bg-content top-[-150%] left-0 p-5 transition-all duration-300 ease-linear justify-center items-center flex-col gap-[6px] z-40
 }
 .mobile_menu_open{
     @apply top-0

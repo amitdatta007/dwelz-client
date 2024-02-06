@@ -14,3 +14,11 @@
 body{
     @apply bg-bg text-text
 }
+
+.slick-slide > div{
+    @apply mx-0 md:mx-[10px] xl:mx-[15px]
+}
+
+.scroll_disable{
+    @apply overflow-y-hidden md:overflow-y-scroll
+}

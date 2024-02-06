@@ -1,0 +1,24 @@
+.properties_section{
+    @apply w-full max-w-[1640px] mx-auto p-5 mt-20
+}
+.properties_section h2{
+    @apply text-[28px] md:text-[38px] xl:text-5xl font-semibold leading-normal
+}
+.properties_section p{
+    @apply text-sm md:text-base xl:text-lg text-text-content leading-normal font-medium 
+}
+.properties_section > img{
+    @apply relative -left-5
+}
+.section_info{
+    @apply mt-5 flex flex-col gap-4
+}
+.section_info > div{
+    @apply flex justify-between gap-10 items-center
+}
+.section_info > div > p > span{
+    @apply hidden md:block
+}
+.view_btn_1{
+    @apply hidden md:block text-[14px] xl:text-lg font-medium py-[14px] px-5 xl:py-[18px] xl:px-6 bg-bg-content rounded-[10px] border border-border leading-normal
+}

@@ -1,0 +1,18 @@
+.faq_slider{
+    @apply mt-12
+}
+
+.faq_slider_controll{
+    @apply flex justify-between px-0 md:px-[10px] xl:px-[15px] py-5 border-t border-border mt-10
+}
+
+.btns{
+    @apply flex gap-[10px]
+}
+.btns > button{
+    @apply p-[14px] bg-bg-content border border-border rounded-full
+}
+
+.view_btn{
+    @apply block md:hidden text-[14px] xl:text-lg font-medium py-[14px] px-5 xl:py-[18px] xl:px-6 bg-bg-content rounded-[10px] border border-border leading-normal
+}

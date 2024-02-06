@@ -1,0 +1,15 @@
+.single_faq{
+    @apply p-6 md:p-[30px] xl:p-10 border border-border rounded-xl flex flex-col gap-6 md:gap-[30px] xl:gap-10 items-start
+}
+.single_faq h3{
+    @apply text-lg md:text-xl xl:text-2xl leading-normal font-semibold
+}
+.single_faq h4{
+    @apply text-base md:text-lg xl:text-xl leading-normal font-medium
+}
+.single_faq span{
+    @apply text-sm md:text-base xl:text-lg font-medium
+}
+.single_faq button{
+    @apply hidden md:block text-[14px] xl:text-lg font-medium py-[14px] px-5 xl:py-[18px] xl:px-6 bg-bg-content rounded-[10px] border border-border leading-normal
+}

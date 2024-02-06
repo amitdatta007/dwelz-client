@@ -1,0 +1,28 @@
+.single_properties{
+    @apply p-6 md:p-[30px] xl:p-10 border border-border rounded-xl flex flex-col gap-[30px]
+}
+.single_properties h3{
+    @apply text-lg md:text-xl xl:text-2xl leading-normal font-semibold
+}
+.single_properties > div > img{
+    @apply rounded-[10px]
+}
+
+.properties_info_overview{
+    @apply flex gap-[6px] flex-wrap
+}
+
+.properties_info_overview > div{
+    @apply flex items-center gap-1 bg-bg-content rounded-full border border-border px-[14px] py-[6px] font-medium text-sm
+}
+
+.price_info{
+    @apply flex justify-between
+}
+.price_info > div{
+    @apply flex flex-col justify-between
+}
+
+.price_info > button{
+    @apply bg-primary text-sm xl:text-lg font-medium px-5 py-[14px] md:px-6 md:py-[18px] rounded-[10px]
+}

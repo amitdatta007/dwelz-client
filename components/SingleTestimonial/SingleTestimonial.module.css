@@ -1,0 +1,26 @@
+.single_testimonial{
+    @apply p-6 md:p-[30px] xl:p-10 border border-border rounded-xl flex flex-col gap-6 md:gap-[30px] xl:gap-10
+}
+.single_testimonial h3{
+    @apply text-lg md:text-xl xl:text-2xl leading-normal font-semibold
+}
+.single_testimonial h4{
+    @apply text-base md:text-lg xl:text-xl leading-normal font-medium
+}
+.single_testimonial span{
+    @apply text-sm md:text-base xl:text-lg font-medium
+}
+.rating{
+    @apply flex gap-[10px]
+}
+.rating > div{
+    @apply bg-bg-content p-[6px] md:p-2 xl:p-[10px] rounded-full border border-border
+}
+
+.review{
+    @apply flex flex-col gap-[14px]
+}
+
+.customer{
+    @apply flex gap-3 items-center
+}

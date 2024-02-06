@@ -1,0 +1,50 @@
+.our_values_section{
+    @apply w-full max-w-[1640px] mx-auto p-5 mt-32 flex gap-5 md:gap-[60px] xl:gap-20 flex-col lg:flex-row items-center
+}
+.our_values_section h2{
+    @apply text-[28px] md:text-[38px] xl:text-5xl font-semibold leading-normal
+}
+.our_values_section h3{
+    @apply text-lg md:text-xl xl:text-2xl leading-normal font-semibold
+}
+
+.our_values_section p{
+    @apply text-sm md:text-base xl:text-lg text-text-content leading-normal font-medium 
+}
+.three_star{
+    @apply relative -left-5
+}
+
+.section_info{
+    @apply w-full lg:w-4/12 
+}
+
+
+.values{
+    @apply w-full lg:w-8/12 bg-bg-content rounded-xl p-[6px] md:p-2 xl:p-[10px]
+}
+.values > div{
+    @apply border border-border p-6 md:p-[50px] xl:p-[60px] bg-bg grid grid-cols-1 md:grid-cols-2 rounded-xl
+}
+.single_value{
+    @apply flex flex-col gap-[14px] md:gap-4 xl:gap-5
+}
+.single_value > div{
+    @apply flex gap-2 md:gap-[10px] xl:gap-[14px] items-center
+}
+.values_icon{
+    @apply p-[14px] md:p-4 xl:p-5 border-2 border-primary rounded-full
+}
+
+.single_value:nth-child(1){
+    @apply border-b pb-5 border-border md:mr-6 md:pb-6 xl:mr-[30px] xl:pb-[30px]
+}
+.single_value:nth-child(2){
+    @apply border-b md:border-b-0 pb-5 md:pb-0 mt-5 md:mt-0 md:border-l border-border md:pl-6 md:mb-6 xl:pl-[30px] xl:mb-[30px]
+}
+.single_value:nth-child(3){
+    @apply border-b md:border-b-0 pb-5 md:pb-0 mt-5 md:border-r border-border md:pr-6 md:mt-6 xl:pr-[30px] xl:mt-[30px]
+}
+.single_value:nth-child(4){
+    @apply mt-5 md:mt-0 md:border-t md:border-border md:pt-6 md:ml-6 xl:pt-[30px] xl:ml-[30px]
+}
