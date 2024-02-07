@@ -1,0 +1,17 @@
+.properties_section_info{
+    background: linear-gradient(120deg, #262626 -26.82%, rgba(38, 38, 38, 0.00) 40.46%); 
+    @apply py-[50px] md:pt-[100px] md:pb-[130px] xl:pt-[150px] xl:pb-40
+}
+.properties_section_info h2{
+    @apply text-[28px] md:text-[38px] xl:text-5xl font-semibold leading-normal
+}
+.properties_section_info h3{
+    @apply text-lg md:text-xl xl:text-2xl leading-normal font-semibold
+}
+
+.properties_section_info p{
+    @apply text-sm md:text-base xl:text-lg text-text-content leading-normal font-medium 
+}
+.properties_section_info > div{
+    @apply w-full max-w-[1640px] mx-auto p-5 flex flex-col gap-[10px] xl:gap-[14px]
+}

@@ -1,0 +1,52 @@
+.unlock_value_section{
+    @apply w-full max-w-[1640px] mx-auto p-5 mt-20 flex flex-col gap-10 md:gap-[60px] xl:gap-20
+}
+.unlock_value_section h2{
+    @apply text-[28px] md:text-[38px] xl:text-5xl font-semibold leading-normal
+}
+.unlock_value_section h3{
+    @apply text-lg md:text-xl xl:text-2xl leading-normal font-semibold
+}
+
+.unlock_value_section p{
+    @apply text-sm md:text-base xl:text-lg text-text-content leading-normal font-medium 
+}
+.section_info{
+    @apply flex flex-col gap-3 
+}
+
+.section_info > img{
+    @apply relative -left-5
+}
+
+.values{
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-[30px]
+}
+.single_value{
+    @apply p-6 md:p-10 xl:p-[50px] flex flex-col gap-4 md:gap-5 xl:gap-[30px] border border-border rounded-xl
+}
+.single_value > div{
+    @apply flex items-center gap-3 md:gap-4 xl:gap-5
+}
+.single_value > div > img{
+    @apply w-12 md:w-[60px] xl:w-20
+}
+
+.learn_more{
+    @apply bg-bg-content col-span-1 md:col-span-2 rounded-xl relative overflow-hidden -z-20
+}
+.learn_more > img{
+    @apply w-full h-full absolute -z-10
+}
+.learn_more > div{
+    @apply  top-0 right-0 w-full h-full flex flex-col p-6 md:p-10 xl:p-[50px] gap-5 xl:gap-[30px] justify-center z-20
+}
+.learn_more > div > div{
+    @apply flex flex-col md:flex-row justify-between md:items-center gap-5
+}
+.learn_more > div > div > span{
+    @apply text-xl md:text-2xl xl:text-3xl font-bold
+}
+.btn{
+    @apply text-[14px] xl:text-lg font-medium py-[14px] px-5 xl:py-[18px] xl:px-6 bg-bg rounded-[10px] border border-border leading-normal
+}
